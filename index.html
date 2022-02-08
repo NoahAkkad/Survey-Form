@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Css/css.css">
+
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Survey Form</h1>
+      <p id="description" class="description text-center">
+        Thank you for taking your time</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend this website to a friend?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What are your identities?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="sports">Sports</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="spend alone time">Spend alone time</option>
+          <option value="spend time with family">Spend time with family</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What would you like to see improved in yourself?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+
+        <label><input name="prefer" value="your health" type="checkbox" class="input-checkbox" />your health</label>
+        <label>
+        <input name="prefer" value="your mind" type="checkbox" class="input-checkbox" />Your mind</label>
+        <label><input name="prefer" value="your mood" type="checkbox" class="input-checkbox" />Your mood</label>
+        <label><input name="prefer" value="your work" type="checkbox" class="input-checkbox" />Your work</label>
+        <label><input name="prefer" value="your study" type="checkbox" class="input-checkbox" />Your study</label>
+        <label><input name="prefer" value="you money" type="checkbox" class="input-checkbox" />You money</label>
+        <label><input name="prefer" value="love" type="checkbox" class="input-checkbox" />Love</label>
+        <label><input name="prefer" value="feelings" type="checkbox" class="input-checkbox" />Feelings</label>
+        <label><input name="prefer" value="commitment" type="checkbox" class="input-checkbox" />Commitment</label>
+        <label><input name="prefer" value="humility" type="checkbox" class="input-checkbox" />Humility</label>
+        <label><input name="prefer" value="Moral" type="checkbox" class="input-checkbox" />Moral</label>
+      </div>
+
+      <div class="form-group">
+        <p>Is there anything else you want to tell us about you?</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
